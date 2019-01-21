@@ -15,7 +15,7 @@ import java.util.Map;
 public class StatusEndpointService implements HealthIndicator {
 
     private MetricsEndpoint metricsEndpoint;
-    @Value("${java.rmi.server.hostname}")
+    @Value("${server.name}")
     private String serverName;
 
     @Autowired
